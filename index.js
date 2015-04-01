@@ -7,5 +7,6 @@ handle["/"] = requestHandlers.index;
 handle["/blog"] = requestHandlers.index;
 handle["/article"] = requestHandlers.article;
 handle["/about"] = requestHandlers.about;
+handle["file"] = requestHandlers.sendFile;
 
 server.start(router.route, handle);
